@@ -28,7 +28,7 @@ For example, if you had to implement the `send` method, you could do something l
 
 ```java
 void send(Email email) { 
-                System.out.println("Sending email"); 
+	System.out.println("Sending email"); 
 } 
 ```
  
@@ -37,8 +37,8 @@ void send(Email email) {
  
  This is a typical case where design patterns may be used. A quick analysis of the required functionalities highlight the following must to have features:
  - sending e-mails in plain text or HTML format
- - adding a disclaimer to the outbound e-mail message
+ - adding a disclaimer to the out going e-mail message
  - encrypting the e-mail message with AES or DES or both
- - outbound e-mail message queue with 3 retries per message
- - outbound messages should be logged
+ - e-mail message queue with 3 retries per message
+ - out bound messages should be logged
  
